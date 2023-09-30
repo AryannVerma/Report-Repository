@@ -1,0 +1,56 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                /* Style the header with the Vasavi Hospital logo */
+                header {
+                    background-color: #fff; /* Blue color, you can change this */
+                    padding: 10px;
+                    text-align: center;
+                }
+                
+                header img {
+                    max-width: 150px; /* Adjust the size as needed */
+                }
+                
+                /* Center the content on the page */
+                .container {
+                    max-width: 800px; /* Adjust the width as needed */
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                /* Style the rows and columns */
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+                
+                .column {
+                    flex-basis: 45%; /* Adjust the width of the columns as needed */
+                    padding: 10px;
+                    border: 1px solid #ddd; /* Add borders for separation */
+                }
+                
+                /* Style the "View and Download" button */
+                button {
+                    background-color: #007BFF; /* Blue color, you can change this */
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                
+                button:hover {
+                    background-color: #0056b3; /* Darker blue on hover */
+                }
+                
+                img{
+                    display: flex;
+                    align-items: start;
+                    min-width: 300px ;
+                }

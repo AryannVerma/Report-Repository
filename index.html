@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Vasavi Hospital</title>
+
+</head>
+<body>
+
+    <header>
+        <img src="hospital.png" alt="Vasavi Hospital Logo">
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <p>UH ID: 201402</p>
+                <p>Patient Name: Aryann Verma</p>
+            </div>
+
+            <div class="column">
+                <p>Age/Gender: 21 Yrs/Male</p>
+                <p>Lab No: 27409</p>
+            </div>
+        </div>
+
+        <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Replace 'your_pdf_file.pdf' with the actual file path or URL of your PDF
+            const pdfFilePath = 'Dengue.pdf';
+
+            // Create an anchor element
+            const a = document.createElement('a');
+            a.href = pdfFilePath;
+
+            // Set the download attribute to prompt the user to save the file
+            a.download = 'downloaded_pdf.pdf';
+
+            // Trigger a click event on the anchor element
+            a.click();
+        }
+    </script>
+</body>
+</html>
